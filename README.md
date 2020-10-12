@@ -12,5 +12,8 @@ Dev: [Estela](https://github.com/ste2021)
 
 ```Resolver Pulo Linha com Variável x Função```
 
+```Eliminar Document.Write utilizando uma função```
+
+
 
 
