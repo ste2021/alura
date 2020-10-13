@@ -2,7 +2,7 @@
 
 Dev: [Estela](https://github.com/ste2021)
 
-## Exercícios Javascript do curso Allura
+## Exercícios Javascript 
 
 ```Exercício 1 - Tabuada - Lidando com variáveis```
 
