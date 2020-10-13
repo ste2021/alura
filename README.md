@@ -18,7 +18,7 @@ Dev: [Estela](https://github.com/ste2021)
 
 ``` Ex 5 Pegadinha Alert```
 
-````Ex 6 Gilberto Funcional```
+```Ex 6 Gilberto Funcional```
 
 ```Ex 7 alert asterisco```
 
