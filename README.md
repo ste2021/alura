@@ -2,7 +2,7 @@
 
 Dev: [Estela](https://github.com/ste2021)
 
-## Exercícios Javascript do curso Allura
+## Exercícios Javascript 
 
 ```Exercício 1 - Tabuada - Lidando com variáveis```
 
@@ -13,6 +13,8 @@ Dev: [Estela](https://github.com/ste2021)
 ```Resolver Pulo Linha com Variável x Função```
 
 ```Eliminar Document.Write utilizando uma função```
+
+```Começando a se aventurar com Template Strings```
 
 
 
