@@ -12,9 +12,15 @@ Dev: [Estela](https://github.com/ste2021)
 
 ```Resolver Pulo Linha com Variável x Função```
 
-```Eliminar Document.Write utilizando uma função```
+``` Ex 4 Functions - Eliminar Document.Write utilizando uma função```
 
-```Começando a se aventurar com Template Strings```
+```Começando a se aventurar com Template Strings - Arquivo esjs```
+
+``` Ex 5 Pegadinha Alert```
+
+````Ex 6 Gilberto Funcional```
+
+```Ex 7 alert asterisco```
 
 
 
