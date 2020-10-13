@@ -14,7 +14,7 @@ Dev: [Estela](https://github.com/ste2021)
 
 ```Eliminar Document.Write utilizando uma função```
 
-```Começando a se aventurar em Template Strings```
+```Começando a se aventurar com Template Strings```
 
 
 
