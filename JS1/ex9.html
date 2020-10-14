@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9 -  Gerações </title>
+
+    <script>
+        // Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, 
+        // então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, 
+        // quantas gerações se passaram?
+        // Vamos criar um programa para resolver a tarefa!
+        // Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.
+        function mostra(frase){
+            document.write(frase);
+        }
+        //mandeira própria de resolver, existem outras como fazer apenas duas variáveis com o ano e a média e dps dividir os dois
+        var anoAtual= 2020;
+        var anoChegada= 1500;
+        var anoPassados= anoAtual-anoChegada;
+        
+        mostra("Desde quando os portugues chegaram ao Brasil, se passaram " + Math.round(anoPassados/28) + " gerações");
+
+       //na resolução do exercício, ele faz apenas o programa escrever a média direta, sem a frase, aqui preferi usar a frase como resposta e inclui uma Math.round para dar o resultado arredondado.
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
