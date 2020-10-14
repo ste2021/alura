@@ -22,6 +22,10 @@ Dev: [Estela](https://github.com/ste2021)
 
 ```Ex 7 alert asterisco```
 
+```Ex 8 idade```
+
+```Ex 9 Gerações```
+
 
 
 
