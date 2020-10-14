@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <script>
+
+        function pulaLinha() {      
+            document.write("<br><hr><br>");
+        }
+
+        function mostra(frase) {
+            document.write("<big>" + frase + "</big>");
+            pulaLinha();
+        }
+
+        var pesoEstelinha = 68;
+        var alturaEstelinha = 1.62;
+        var imcEstelinha = Math.round(pesoEstelinha/(alturaEstelinha*alturaEstelinha));
+
+        mostra("O IMC da Estelinha é " + imcEstelinha);
+     
+    </script>
+
+    <style>
+        body{
+            background-color: darkcyan;
+            color:antiquewhite;
+            text-align: center;
+        }
+
+
+         #IMC{
+             border: 2px;
+             width: 40%;
+             margin: auto;
+             background-color: black;
+             color: aquamarine;
+             border-color: aqua;
+             border-radius: 05px;
+            
+         }
+         .tabela{
+             background-color: teal;
+             text-align: center;
+             margin: auto;
+            
+         }
+         
+    </style>
+</head>
+
+<body>
+ <div class="tabela">
+        <table id="IMC" border="1">
+            <tr>
+                <td>Magreza</td>
+                <td>< 18,5 </td>              
+            </tr>
+            <tr>
+                <td>Normal</td>
+                <td>18,5 a  </td>
+                
+            <tr>
+                <td>Sobrepeso</td>
+                <td>24,9 a 30</td>
+            </tr>
+            <tr>
+                <td>Obesidade</td>
+                <td>>30 </td>
+                </tr>
+            
+        </table>
+        
+    </table> 
+ </div> 
+</body>
+
+</html>
