@@ -26,6 +26,6 @@ Dev: [Estela](https://github.com/ste2021)
 
 ```Ex 9 Gerações```
 
-
+```Ex 10 REVISAO```
 
 
