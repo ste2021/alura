@@ -28,4 +28,8 @@ Dev: [Estela](https://github.com/ste2021)
 
 ```Ex 10 REVISAO```
 
+```Ex 11 - IMC calculo simples, já com edição de CSS```
+
+```Ex 11.2 refatorando IMC usando funções```
+
 
