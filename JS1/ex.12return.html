@@ -16,21 +16,17 @@
             pulaLinha();
         }
 
-        function calculaIMC(peso, altura){
+        function calculaIMC(peso, altura){  //eu posso retornar uma função em uma variável igual na linha 24,25, se na função eu utilizar o return
             var imc = peso/(altura*altura);
-            mostra("O IMC calculado é " + Math.round(imc));//segredo é jogar o mostra dentro da função calculaIMC pr rodar de uma vez
+            return Math.round(imc);
         }
 
-        calculaIMC(68, 1.62);
+        var imcEstela = calculaIMC(68, 1.64);
+        var imcMae = calculaIMC(85, 1.64);
+      
+      mostra(imcEstela);
+      mostra(imcMae);
 
-        calculaIMC(25, 1.1);
-     
-        calculaIMC(85, 1.62);
-
-        // mostra("O IMC da Estelinha é " + imcEstelinha);
-        // mostra("O IMC da Lorena é " + imcLorena);
-        // mostra("O IMC da Mae é " + imcMae);
-     
     </script>
 </head>
 <style>
