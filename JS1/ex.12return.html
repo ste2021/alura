@@ -6,8 +6,7 @@
     <title>Colocando IMC em uma função</title>
 
     <script>
-
-        function pulaLinha() {      
+             function pulaLinha() {      
             document.write("<br><hr><br>");
         }
 
@@ -18,7 +17,7 @@
 
         function calculaIMC(peso, altura){  //eu posso retornar uma função em uma variável igual na linha 24,25, se na função eu utilizar o return
             var imc = peso/(altura*altura);
-            return Math.round(imc);
+            return imc;
         }
 
         var imcEstela = calculaIMC(68, 1.64);
