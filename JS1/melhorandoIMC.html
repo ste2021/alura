@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando IMC em uma função</title>
+
+    <script>
+        function pulaLinha() {
+            document.write("<br><hr><br>");
+        }
+
+        function mostra(frase) {
+            document.write("<big>" + frase + "</big>");
+            pulaLinha();
+        }
+
+        function calculaIMC(altura, peso) { //eu posso retornar uma função em uma variável igual na linha 24,25, se na função eu utilizar o return
+
+            return Math.round(peso / (altura * altura));
+        }
+        var nome = prompt("Informe seu Nome");
+        var alturaInformada = prompt("Digite sua altura", "Altura");
+        var pesoInformado = prompt("Infome seu peso");
+
+        var imc = calculaIMC(alturaInformada, pesoInformado);
+
+        document.write(nome + "  o seu IMC é " + imc);
+        pulaLinha();
+
+        if (imc < 18.5) {
+            mostra("Você está ABAIXO do recomendado");
+        }
+        if (imc > 35) {
+            mostra("Você está ACIMA do peso")
+        }
+        if (imc >= 25) {
+            if (imc <= 30) {
+                mostra("Você está com SOBREPESO")
+            }
+        }
+        if (imc > 18.5) {
+            if (imc <= 24.9) {
+                mostra("Você está no peso NORMAL");
+            }
+        }
+    </script>
+</head>
+<style>
+    body {
+        background-color: darkcyan;
+        color: antiquewhite;
+        text-align: center;
+    }
+    
+    #IMC {
+        border: 2px;
+        width: 40%;
+        margin: auto;
+        background-color: black;
+        color: aquamarine;
+        border-color: aqua;
+        border-radius: 05px;
+    }
+    
+    .tabela {
+        background-color: teal;
+        text-align: center;
+        margin: auto;
+    }
+</style>
+</head>
+
+<body>
+    <div class="tabela">
+        <table id="IMC" border="1">
+            <tr>
+                <td>Magreza</td>
+                <td>
+                    < 18,5 </td>
+            </tr>
+            <tr>
+                <td>Normal</td>
+                <td>18,5 a </td>
+
+                <tr>
+                    <td>Sobrepeso</td>
+                    <td>24,9 a 30</td>
+                </tr>
+                <tr>
+                    <td>Obesidade</td>
+                    <td>>30 </td>
+                </tr>
+
+        </table>
+
+        </table>
+    </div>
+</body>
+
+</html>

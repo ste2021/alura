@@ -16,15 +16,17 @@
         }
 
         function calculaIMC(peso, altura){  //eu posso retornar uma função em uma variável igual na linha 24,25, se na função eu utilizar o return
-            var imc = peso/(altura*altura);
-            return Math.round(imc);
+           
+            return Math.round(peso/(altura*altura));//posso retornar o cálculo direto simplificando o código
         }
 
-        var imcEstela = calculaIMC(68, 1.64);
+        var imcEstela = calculaIMC(68, 1.64); //uma boa prática é não colocar o mostra no return da função pr o usuario retornar como ele quiser
         var imcMae = calculaIMC(85, 1.64);
+        var totalIMC = imcEstela + imcMae;
       
       mostra(imcEstela);
       mostra(imcMae);
+      mostra(totalIMC);
 
     </script>
 </head>

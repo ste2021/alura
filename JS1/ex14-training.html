@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando IMC em uma função</title>
+
+    <script>
+        function pulaLinha() {
+            document.write("<br><hr><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var vitorias = parseInt(prompt("Entre com o número de Vitórias")); //parseInt transforma string em numero 
+
+        var empates = parseInt(prompt("Entre com o número de Empates"));
+
+        var pontos = (vitorias * 3) + empates;
+
+        mostra("Os pontos do seu time é " + pontos);
+
+        if (pontos > 28) { //confere para ver se é true ou false -- 
+            mostra("Seu time está melhor que ano passado");
+        };
+
+        if (pontos < 28) {
+            mostra("Seu time está pior que ano passado");
+        }
+        if (pontos == 28) {
+            mostra("Seu time está igual ano passado");
+        }
+    </script>
+</head>
+<style>
+    body {
+        background-color: darkcyan;
+        font-size: 50px;
+        color: antiquewhite;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+</body>
+
+</html>
