@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Adivinhação</title>
+    <script>
+        function pulaLinha() {
+            document.write("<br><hr><br>");
+        }
+
+        function mostra(frase) {
+            document.write("<big>" + frase + "</big>");
+            pulaLinha();
+        }
+
+        var numeroPensado = 5;
+        var chute = parseInt(prompt("digite seu chute!"));
+        //sempre que queremos interpretar uma entrada como um número, devemos utilizar o parseInt().
+        if (chute == numeroPensado) {
+            mostra("Você acertou!");
+        }
+
+        if (chute != numeroPensado) {
+            mostra("Você errou, o número pensado foi " + numeroPensado);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
