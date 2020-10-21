@@ -4,7 +4,7 @@ Dev: [Estela](https://github.com/ste2021)
 
 ## Exercícios Javascript 
 
-## Exercícios HtML + CSS
+## Exercícios HTML + CSS
 
 
 
