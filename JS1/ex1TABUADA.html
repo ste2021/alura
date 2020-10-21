@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABUADA</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var multiplicador = 1; //colocar o mostra dentro do bloco do while para que repita ate 10
+    while (multiplicador <= 10) { //repetição até chegar no 10, imprmie enquanto aqui for TRUE
+        mostra(7 * multiplicador); // ele pergunta pro 7*1,,, 
+        multiplicador = multiplicador + 1; //aqui ele soma, até chegar no 10 por causa do whileee;
+    }
+</script>
+
+</html>
