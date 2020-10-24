@@ -1,0 +1,6 @@
+total = total +1;; 
+total = total +1;
+
+para incrementar é só fazer assim:
+
+total = total +1 é igual a ""total++;""""
