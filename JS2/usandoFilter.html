@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar o método Filter no Vannila JS</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //FIlter() vai percorrer cada elemento de um array e colcocar em um novo array,
+    // os elementos que retornam TRUE, de acordo com a função especificada no filtro *
+    const people = [{
+                name: "joao",
+                age: 28,
+            }, {
+                name: 'Dayla',
+                age: 21,
+            }, {
+                name: 'Senhora',
+                age: 22
+            }, {
+                name: 'Estela',
+                age: 28
+            }
+
+        ]
+        // define uma nova variável e passa pra ela o array people, o resultado do filtro será um array com tds as pessoas que tem mais de 22 anos.
+    const newArray = people.filter(person => person.age < 22);
+    //resultado do filtro será uma tabela com todos com menores de 22 anos
+    console.table(newArray);
+</script>
+
+</html>

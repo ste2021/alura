@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Familiares</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    function pulaLinha() {
+        document.write("<br><br>")
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalFamiliares = parseInt(prompt("Qual a Quantidade de Familiares ?"));
+
+    var numero = 1; //crio essa variavel p while ter um parametro
+
+    while (numero <= totalFamiliares) { //enquanto numero for menor ou igual ao totalFamiliares, ele repete a var idadeFamiliar
+        var idadeFamiliar = parseInt(prompt("Informe a idade do Familiar"));
+        numero++; //incremento o numero + 1 para repetir acumulado
+    }
+
+    mostra()
+
+    //vamos criar um programa genérico, a primeira pergunta, qual a qtde de familiares
+</script>
+
+</html>

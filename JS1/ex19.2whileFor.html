@@ -20,8 +20,14 @@
         document.write(frase);
         pulaLinha();
     }
+
+    var contador = 1;
+    while (contador <= 10) {
+        alert("Contador atual: " + contador);
+        contador = contador + 1;
+    }
     // for(espaço 1, espaço 2, espaço 3)coloca as variaveis dentro dos 3 espaços do for separados por , a condição do while no meio;
-    for (var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1) {
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador + 1) { //preciso da variável, senão nunca para de dar FALSE
 
         mostra(7 * multiplicador); // ele pergunta pro 7*1,,, 
         // multiplicador = multiplicador + 1; //coloca no espaço 3 do for
