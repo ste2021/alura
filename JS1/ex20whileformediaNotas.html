@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de Notas</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var bimestres = 4; //crio essa variavel para while ter um parametro;
+
+    var numero = 1;
+    var totalNotas = 0;
+    while (numero <= bimestres) {
+
+        var notaBimestre = parseInt(prompt("Qual nota do Bimestre?"));
+        totalNotas = totalNotas + notaBimestre;
+        numero++;
+    }
+    var mediaNotas = totalNotas / bimestres;
+
+    mostra("A média de notas é " + mediaNotas);
+
+
+    // var totalFamiliares = parseInt(prompt("Qual a Quantidade de Familiares ?"));
+
+    // var numero = 1; //crio essa variavel p while ter um parametro
+
+    // while (numero <= totalFamiliares) { //enquanto numero for menor ou igual ao totalFamiliares, ele repete a var idadeFamiliar
+    //     var idadeFamiliar = parseInt(prompt("Informe a idade do Familiar"));
+    //     numero++; //incremento o numero + 1 para repetir acumulado
+    // }
+
+    // mostra()
+</script>
+
+</html>

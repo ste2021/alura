@@ -24,13 +24,15 @@
     var totalFamiliares = parseInt(prompt("Qual a Quantidade de Familiares ?"));
 
     var numero = 1; //crio essa variavel p while ter um parametro
+    var totalIdade = 0;
 
     while (numero <= totalFamiliares) { //enquanto numero for menor ou igual ao totalFamiliares, ele repete a var idadeFamiliar
         var idadeFamiliar = parseInt(prompt("Informe a idade do Familiar"));
+        totalIdade = totalIdade + idadeFamiliar;
         numero++; //incremento o numero + 1 para repetir acumulado
     }
-
-    mostra()
+    var mediaIdade = totalIdade / totalFamiliares;
+    mostra("A média é " + mediaIdade);
 
     //vamos criar um programa genérico, a primeira pergunta, qual a qtde de familiares
 </script>
