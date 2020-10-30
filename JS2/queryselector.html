@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a utilizar o query selectorzinho</title>
+
+</head>
+
+<body>
+
+    <form>
+        <select id="mySelect">
+    <option>Maçã</option>
+    <option>Laranjinha</option>
+    <option>Abacaxizinho</option>
+    <option>Bananinha</option>
+  </select>
+    </form>
+
+    <p>Escolha uma opção.</p>
+
+    <button onclick="myFunction()">Shazammm!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").options[0].text;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>
