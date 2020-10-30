@@ -84,8 +84,13 @@ nav a:hover {
 }
 
 footer {
-    color: mintcream;
     background-color: rgb(68, 11, 11);
     text-align: center;
-    padding: 05px;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: mintcream;
+    font-size: 12px;
+    margin: 20px 0 0;
 }
