@@ -58,8 +58,18 @@ nav a:hover {
     cursor: pointer;
 }
 
-.produtos h2 {
+
+/* quando vc passa o mouse em cima = hover, quando se clida= active  */
+
+.produtos li:active {
+    border-color: rgb(212, 199, 154);
+}
+
+.produtos li:hover h2 {
     font-size: 30px;
+}
+
+.produtos h2 {
     font-weight: bold;
 }
 
@@ -71,4 +81,11 @@ nav a:hover {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer {
+    color: mintcream;
+    background-color: rgb(68, 11, 11);
+    text-align: center;
+    padding: 05px;
 }
