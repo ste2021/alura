@@ -27,7 +27,7 @@
 
     <script>
         function myFunction() {
-            var x = document.getElementById("mySelect").options[0].text;
+            var x = document.getElementById("mySelect").options[mySelect.selectedIndex].text;
             document.getElementById("demo").innerHTML = x;
         }
     </script>
