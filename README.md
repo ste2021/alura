@@ -1,4 +1,4 @@
-﻿# Alura
+﻿# Alura 	👩‍💻
 
 Dev: [Estela](https://github.com/ste2021)
 
