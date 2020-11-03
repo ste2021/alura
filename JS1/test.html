@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o número que estou pensando!</button>
+
+<script>
+    var segredos = [5, 7, 10, 2]; //primeira posicao do array é zero
+
+    var input = document.querySelector("input"); // puxar dados do DOM,
+    input.focus(); //faz o selector ficar no input...
+
+    function verifica() { //funcao que pega o valor do input e compara com o segredo
+
+        for (var posicao = 0; posicao > segredos.length; posicao++) {
+            var achou = false;
+            if (input.value == segredos[posicao]) {
+
+                alert("Isso aí GAFANHOTO");
+                achou = true;
+                break;
+            }
+        }
+        if (achou == false) {
+            alert("Vc errou");
+
+        }
+
+        input.value = ""; //se acertou ou errou, limpa o campo e faz ele ganhar foco
+        input.focus();
+        return
+    }
+
+    var button = document.querySelector("button"); //pega o botao do DOM e associo com o clicar do bota para executar funcao verifica
+    button.onclick = verifica;
+</script>
