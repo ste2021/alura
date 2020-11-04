@@ -3,9 +3,7 @@ titulo.textContent = "Aparecida Nutricionista";
 
 var pacientes = document.querySelectorAll(".paciente");
 
-//propriedade length para saber o tamanho doa array, podemos fazer um console.log(pacientes.length)
-//pr percorerr o array de 0 a 5, i é só uma sintaxe
-for (i = 0; i <= pacientes.length; i++) {
+for (var i = 0; i < pacientes.length; i++) {
 
     var paciente = pacientes[i];
 
@@ -15,37 +13,62 @@ for (i = 0; i <= pacientes.length; i++) {
     var tdAltura = paciente.querySelector(".info-altura");
     var altura = tdAltura.textContent;
 
-
     var tdImc = paciente.querySelector(".info-imc");
 
     var pesoEhValido = true;
     var alturaEhValida = true;
 
-    if (peso <= 0 || peso >= 1000) { //as duas barrinhas siginifcam e, ou, em js
-        console.log("Peso INvalido");
+    if (peso <= 0 || peso >= 1000) {
+        console.log("Peso inválido!");
         pesoEhValido = false;
-        tdImc.textContent = "Peso Inválido"
+        tdImc.textContent = "Peso inválido";
         paciente.classList.add("paciente-invalido");
     }
-    if (altura <= 0 || altura >= 3.00) { //as duas barrinhas siginifcam e, ou, em js
-        console.log("Altura INvalido");
+
+    if (altura <= 0 || altura >= 3.00) {
+        console.log("Altura inválida!");
         alturaEhValida = false;
-        tdImc.textContent = "Altura INVÁILIDA"
+        tdImc.textContent = "Altura inválida";
         paciente.classList.add("paciente-invalido");
     }
-    if (alturaEhValida && pesoEhValido) {
+
+    if (pesoEhValido && alturaEhValida) {
         var imc = peso / (altura * altura);
         tdImc.textContent = imc.toFixed(2);
-    } else {
-        tdImc.textContent = "Altura e/ou peso inválidos!"
     }
-
-
-}
-titulo.addEventListener("click", mostraMensagem);
-
-function mostraMensagem() {
-    console.log("Olá eu fui clicado!");
 }
 
-// var tdAltura = paciente.querySelector(".info-peso");
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    var form = document.querySelector("#form-adiciona");
+
+    var nome = form.nome.value;
+    var peso = form.peso.value;
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
+
+    var pacienteTr = document.createElement("tr");
+
+    var nomeTd = document.createElement("td");
+    var pesoTd = document.createElement("td");
+    var alturaTd = document.createElement("td");
+    var gorduraTd = document.createElement("td");
+    var imcTd = document.createElement("td");
+
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+
+    pacienteTr.appendChild(nomeTd);
+    pacienteTr.appendChild(pesoTd);
+    pacienteTr.appendChild(alturaTd);
+    pacienteTr.appendChild(gorduraTd);
+
+    var tabela = document.querySelector("#tabela-pacientes");
+
+    tabela.appendChild(pacienteTr);
+
+});
