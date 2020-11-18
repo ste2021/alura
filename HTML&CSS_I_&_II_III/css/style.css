@@ -99,12 +99,22 @@ form {
 	margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
 	display:block;
 	font-size: 20px;
 	margin: 0 0 10px;
 }
 
+footer {
+    background-color: rgb(68, 11, 11);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: mintcream;
+    font-size: 12px;
+}
 .input-padrao{
 	display: block;
 	font-size: 0 0 20px;
@@ -121,4 +131,37 @@ form label, form p {
 
 .checkbox {
 	margin: 20px 0;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 05px;
+	transition: 1s all;
+	cursor: pointer;
+}
+/* aumentar 20% e trocar de cor de fundo dps de 1 seg */
+.enviar:hover{
+	background-color: red;
+	transform: scale(1.2);;
+
+}
+
+table{
+	margin: 20px 40px;
+}
+thead{
+	background-color: #555555;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+td, th{
+	border: 1px solid black;
+	padding: 08px 15px ;
 }
