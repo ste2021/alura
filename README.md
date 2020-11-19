@@ -12,9 +12,3 @@ Dev: [Estela](https://github.com/ste2021)
 
 ## Javascript Avançado - Conhecendo o Browser e Padrões de Projeto
 
-# Plano de Estudos - ANGULAR 
-
-## TYPESCRIPT - Aprimorando o Javascript
-
-
-
