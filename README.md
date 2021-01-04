@@ -6,7 +6,7 @@ Dev: [Estela](https://github.com/ste2021)
 
 ## Javascript - Orientação a Objetos
 
-##  HTML + CSS - 1, 2 e 3;
+##  HTML + CSS - 1, 2, 3 e 4;
 
 ## FETCH API
 
